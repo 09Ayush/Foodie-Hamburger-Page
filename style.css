@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f0eb;
+  margin: 0;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 24px;
+}
+.header-container{
+    max-width: 1290px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+  text-decoration-line: none;
+  color: #492118;
+}
+nav a {
+  font-weight: 700;
+  font-size: 20px;
+  width: 100%;
+}
+
+nav{
+    
+    max-width: 1290px;
+}
+/* When we select like a + a, it leaves the first element and then apply margin-left 60px to the other elements. */
+nav a + a {
+  margin-left: 60px;
+}
+
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 50px;
+}   
+.logo img{
+    width: 100%;
+}
+
+main {
+  padding: 0 24px;
+}
+img {
+  width: 100%;
+}
+
+.img-container {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+.combined-section {
+  margin-top: 100px;
+}
+
+.combined-section p {
+  text-align: center;
+  color: #492118;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+
+.section .img-container{
+    max-width: 960px;
+}
+
+.section h2{
+    text-align: center;
+    color: #492118;
+    font-size: 48px;
+    font-weight: 700;
+}
+.section{
+    margin-top: 120px;
+}
+
+.go-to-top{
+    text-align: right;
+    max-width: 960px;
+    margin: 0 auto;
+    text-decoration: underline;
+}
+
+#message{
+    text-align: center;
+    color: #858585;
+    font-size: 24px;
+    margin-top: 36px;
+}
+
+@media (max-width: 1200px) {
+  
+  nav a + a{
+    margin-left: 48px;
+  }
+  header{
+    padding: 16px 24px
+  }
+}
+
+@media (max-width: 960px) {
+  nav a{
+    font-size: 12px;
+  }
+  nav a + a{
+    margin-left: 32px;
+  }
+
+  .combined-section p {
+    font-size: px;
+    }
+
+    .section h2{
+    font-size: 40px;
+    }
+
+    .combined-section{
+        margin-top: 40px;
+    }
+
+    .section{
+        margin-top: 42px;
+    }
+
+    nav a{
+    font-size: 16px;
+  }
+
+  .combined-section p {
+    font-size: 12px;
+
+    }
+
+    .section h2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        background-color: #f6f0ebc8;
+        backdrop-filter: blur(6px);
+        position: sticky;
+        top: 0;
+    }
+
+    nav{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        right: 24px;
+        background: rgba(255, 255, 255, 0.75);
+        top: 24px ;
+        padding: 24px;
+    }
+
+    nav a + a {
+        margin: 0;
+        margin-top: 16px;
+        
+    }
+    #message{
+        font-size: 12px;
+    }
+       
+}
